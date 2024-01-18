@@ -133,17 +133,84 @@
 #     print("Pikk pikkus")
 
 
-    #8
-import random
-toodet = ("piim", "saia", "leib")
-ostapiim = input("Kas te tahate osta piim? (jah/ei): ")
-if ostapiim == "jah":
-    liitr = int(input("Kui palju liitreid te soovite?"))
-    hindpiim = round(random.randint(0.5, 5.0), 2)
-    piimm = liitr * hindpiim
-    print("Teie hind on", piimm)
-else:
-    print("Head aega!")
+#     #8
+# import random
+# toodet = ("piim", "saia", "leib")
+# ostapiim = input("Kas te tahate osta piim? (jah/ei): ")
+# if ostapiim == "jah":
+#     liitr = int(input("Kui palju liitreid te soovite?"))
+#     hindpiim = round(random.randint(0.5, 5.0), 2)
+#     piimm = liitr * hindpiim
+#     print("Teie hind on", piimm)
+# else:
+#     print("Head aega!")
 
 
 
+    #10
+# arv1 = float(input("Sisetage esimene arv:"))
+# arv2 = float(input("Sisestage teine arv:"))
+# operatsioon = input("Valige kas (+, -, *, /): ")
+# if operatsioon == "+":
+#     vastus = arv1 + arv2
+#     print(vastus)
+# elif operatsioon == "-":
+#     vastus = arv1 - arv2
+#     print(vastus)
+# elif operatsioon == "*":
+#     vastus = arv1 * arv2
+#     print(vastus)
+# elif operatsioon == "/":
+#     vastus = arv1 / arv2
+#     print(vastus)
+# elif arv1 <=0:
+#     print("Ei saa jagada nulliga")
+# else:
+#    print("Viga. Kontrollige teie arv")
+
+
+    #11
+# täna = input("Sisestaga, milline päev täna on (ilma aasta):")
+# sunnipaev = input("Sisestage teie sünnipäev: ")
+# if sunnipaev == täna:
+#     print("Täna on teie juubel, palju õnne!")
+# else:
+#     print("Täna ei ole teie juubel.")
+
+
+    #12
+# from math import *
+# import math
+# alghind = float(input("Sisestage alg hind:"))
+# if alghind <=10:
+#     soodus1 = alghind * 0.1
+#     lopphind = alghind - soodus1
+#     print("Teie soodus on 10%. Lõpp hind on:", round(lopphind, 2))
+# elif alghind <=20 and alghind >10:
+#     soodus2 = alghind * 0.2
+#     lopphind2 = alghind - soodus2
+#     print("Teie soodus on 20%. Lõpp hind on:", round(lopphind2, 2))
+
+
+
+   #13
+# porand = input("Sisestage oma põrand (naine/mees):")
+# if porand == "mees":
+#    vanus= int(input("Sisestage oma vanus:"))
+# if porand == "naine":
+#     print("Vabandame, aga tee ei või regestreerida siin.")
+# if vanus == 16 and vanus <= 18:
+#     print("Tere tulemast meie meeskondis!")
+# else:
+#     print("Vabandame, aga tee ei või regestreerida siin.")
+
+
+    #14
+
+inimesed = int(input("Sisestage inimeste arv: "))
+buss = int(input("Sisestage autobussi suurus: "))
+bussiarv = inimesed / buss
+print(round(bussiarv,1))
+inimesed2 = inimesed / bussiarv
+print(int(f"Teil on vaja (bussiarv))."))
+print(int(f"Viimases bussis on (inimesed2) inimest."))
