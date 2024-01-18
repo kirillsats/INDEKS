@@ -23,4 +23,11 @@ elif index == 35 and index <40:
     print("Tugev rasvumine")
 elif index >40:
     print("Tervisele ohtlik rasvumine ")
-    
+print("Kahju! See on väga kasulik info!")
+print()
+print("Kohtumiseni, " + nimi + "! Igavesti Sinu, Python!")
+
+try:
+    pikkus=int(input("Siseta oma kaal:"))
+except:
+    ValueError
