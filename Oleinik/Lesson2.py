@@ -273,7 +273,11 @@ else:
 
 inimesed = int(input("Sisestage inimeste arv: "))
 buss = int(input("Sisestage autobussi suurus: "))
-bussiarv = inimesed / buss
+bussiarv = round(inimesed / buss)
+if inimesed%buss != 0:
+    bussiarv += 1
+vb=buss%inimesed
+print("Kokku on vaja {0} bussi ja viimassek {1} inimest".format(bussiarv,vb))
 print(round(bussiarv,1))
 inimesed2 = inimesed / bussiarv
 print(int(f"Teil on vaja (bussiarv))."))
