@@ -1,24 +1,24 @@
        # 1
-# from string import *
-# lause =input("Sisestage sõna või lause:").lower()
-# lause_list = list(lause)
-# vokaali = ["a", "e", "i", "o", "u", "ö", "ä", "õ", "ü" ]
-# v=k=m=t=0
-# konsonanti = ["b", "p", "d", "t", "g", "k", "s", "h", "f", "š", "z", "ž"]
-# markid = punctuation
-# for sümbool in lause_list:
-#     if sümbool in vokaali:
-#         v+=1
-#     elif sümbool in konsonanti:
-#         k+=1
-#     elif sümbool in markid:
-#         m+=1
-#     elif sümbool==" ":
-#         t+=1
-# print("vokaali:", v)
-# print("konsonanti:", k)
-# print("Kirjuvahemärgid:", m)
-# print("Tühikud:", t)
+from string import *
+lause =input("Sisestage sõna või lause:").lower()
+lause_list = list(lause)
+vokaali = ["a", "e", "i", "o", "u", "ö", "ä", "õ", "ü" ]
+v=k=m=t=0
+konsonanti = ["b", "p", "d", "t", "g", "k", "s", "h", "f", "š", "z", "ž"]
+markid = punctuation
+for sümbool in lause_list:
+    if sümbool in vokaali:
+        v+=1
+    elif sümbool in konsonanti:
+        k+=1
+    elif sümbool in markid:
+        m+=1
+    elif sümbool==" ":
+        t+=1
+print("vokaali:", v)
+print("konsonanti:", k)
+print("Kirjuvahemärgid:", m)
+print("Tühikud:", t)
 
 
 
