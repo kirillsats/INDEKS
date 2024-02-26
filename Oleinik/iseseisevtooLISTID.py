@@ -40,7 +40,7 @@
 #     if nimi not in uued_nimed:
 #         uued_nimed.append(nimi)
 # print(uued_nimed)
-#
+# #
 # vanused = []
 # for n in range(5):
 #     vanus = int(input("Sisestage, kui vana sa oled: "))
@@ -152,3 +152,44 @@ for i in loeng:
         loeng[loeng.index(maksimum)] = kasutu_arv
         print(f"tühi loeng: {loeng}")
         print(f"kasutu arv: {kasutu_arv}")
+#
+
+
+
+            #7
+numbrid = [0, 1, 2, 3, -1, -2, -3]
+
+sorterimine = sorted(numbrid)
+
+print("Sorteeritud loend: ", sorterimine)
+
+
+
+
+
+
+# Выведи на экран буквы имени в алфавитном порядке.(если буква встречается несколько раз, то повторять ее не надо)
+
+            # 9
+while True:
+    nimi = input("Sisestage nimi: ")
+    if nimi.isalpha():   #функцию подсмотрел в интернете
+        break
+    else:
+        print("Sisestage ainult täht kirju: ")
+print("Tere,",nimi.capitalize())
+summ = sum(i.isalpha() for i in nimi)
+print(summ)
+vokaali = sum(i.isalpha() for i in nimi)
+konsonanti = sum(i.isalpha() for i in nimi)
+print("Summ on: " ,summ,",", "Vokaali arv on: ",vokaali,",", "Konsonanti arv on: ", konsonanti)
+taht = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'ü', 'õ', 'ä', 'ö', 'l', 'k', 'j', 'h', 'g', 'f', 'd', 's', 'a', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
+tahted = set()    #(создает пустое множество)
+for i in nimi.lower():
+    if i in taht:
+        tahted.add(i)
+mudustatud_tahted = sorted(tahted)
+for i in mudustatud_tahted:
+    print(i)
+
+
